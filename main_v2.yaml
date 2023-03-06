@@ -98,7 +98,7 @@ Resources:
     Type: AWS::CloudFormation::Stack
     Condition: InstallForwarder
     Properties:
-      TemplateURL: "https://github.com/patelambrish/temp/blob/main/latest.yaml"
+      TemplateURL: "https://raw.githubusercontent.com/patelambrish/temp/main/latest.yaml"
       Parameters:
         DdApiKey: !Ref APIKey
         DdSite: !Ref DatadogSite
